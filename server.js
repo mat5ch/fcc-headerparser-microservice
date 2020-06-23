@@ -6,8 +6,6 @@ var express = require('express');
 var app = express();
 // set port
 app.set('port', process.env.PORT || 3000);
-// allow correct ip lookup
-app.set('trust proxy', 'loopback');
 
 // enable CORS (https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
 // so that your API is remotely testable by FCC 
